@@ -2,9 +2,10 @@ import pyaudio
 import wave
 import threading
 import openai
+import os
 
 # Need to install the openai module before using
-openai.api_key = <OPENAI_API_KEY>
+openai.api_key = os.environ['OPEN_AI_KEY']
 
 # Parameters
 output_file = "output.wav"
